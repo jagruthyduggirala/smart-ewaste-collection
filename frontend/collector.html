@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Collector Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1> Smart E-Waste Collection</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<div class="form-container">
+
+    <h2> Collector Dashboard</h2>
+
+    <p style="text-align:center; margin-bottom:20px;">
+        Pending E-Waste Collection Requests
+    </p>
+
+    <form action="../requests" method="get">
+    <button type="submit">View Requests</button>
+</form>
+
+<br>
+
+<form action="../route" method="get">
+    <button type="submit"> Generate Optimized Route</button>
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report E-Waste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1> Smart E-Waste Collection</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="../logout">Logout</a>
+    </nav>
+</header>
+
+<div class="form-container">
+
+    <h2>Report E-Waste</h2>
+
+    <form action="../report" method="post">
+
+        <input type="text"
+               name="item_name"
+               placeholder="E-Waste Item Name"
+               required>
+
+        <input type="text"
+               name="category"
+               placeholder="Category (Mobile, Laptop, Battery...)"
+               required>
+
+        <input type="number"
+               name="quantity"
+               placeholder="Quantity"
+               min="1"
+               required>
+
+        <input type="text"
+               name="location"
+               placeholder="Pickup Location"
+               required>
+
+        <input type="number" step="any" name="latitude"
+            placeholder="Latitude" required>
+
+        <input type="number" step="any" name="longitude"
+            placeholder="Longitude" required>
+
+        <button type="submit">Submit Request</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
